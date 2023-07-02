@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen(this.startQuiz, {super.key});
@@ -20,9 +21,12 @@ class StartScreen extends StatelessWidget {
           //   width: 300,),
           // ),
           const SizedBox(height: 25,),
-          const Text('Learn Flutter the fun Way!!',
-          style: TextStyle(fontWeight: FontWeight.bold,
-          fontSize: 18),),
+          Text('Learn Flutter the fun Way!!',
+          style: GoogleFonts.lato(
+            color: Colors.white,
+            fontSize: 20,
+            fontWeight: FontWeight.bold
+          )),
           const SizedBox(height: 25,),
           OutlinedButton.icon(
             onPressed: () {
