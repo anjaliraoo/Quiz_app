@@ -24,19 +24,19 @@ class SummaryItem extends StatelessWidget {
               Text(
                 itemData['question'] as String,
                 style: GoogleFonts.lato(
-                  color: Colors.white,
-                  fontSize: 16,
+                  color: Color.fromARGB(255, 14, 1, 1),
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               const SizedBox(height: 5,),
               Text(itemData['user_answer'] as String,
               style: const TextStyle(
-                color: Colors.amberAccent,
+                color: Color.fromARGB(255, 56, 51, 220),
               ),),
               Text(itemData['correct_answer'] as String,
               style: const TextStyle(
-                color: Colors.amberAccent,
+                color: Color.fromARGB(255, 141, 67, 205),
               ),),
             ],
           ),),

@@ -18,15 +18,15 @@ class QuestionsIdentifier extends StatelessWidget {
       alignment: Alignment.center,
       decoration: BoxDecoration(
         color: isCorrectAnswer
-        ? Colors.blueGrey
-        : Colors.orangeAccent,
+        ? const Color.fromARGB(255, 69, 144, 182)
+        : const Color.fromARGB(208, 64, 43, 147),
         borderRadius: BorderRadius.circular(100),
       ),
       child: Text(
         questionNumber.toString(),
         style: const TextStyle(
           fontWeight: FontWeight.bold,
-          color: Colors.black45,
+          color: Color.fromARGB(115, 7, 0, 0),
         ),
       ),
     );
